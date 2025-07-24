@@ -1,0 +1,151 @@
+body {
+  background-color: #748DAE;   
+  height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+input{
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  margin-right:4px;
+   background-color:#9ECAD6;
+   font-weight: 700;
+   letter-spacing: 0px;
+   text-transform: uppercase;
+   
+}
+
+
+div{   
+  border:3px solid black;
+  padding-left: 10px;
+  background-color:#9ECAD6;
+  height: 64vh;
+  width: 50vh;
+  align-self: center;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+ul{
+  padding:1px 1px 0px 1px;
+}
+
+.k{  
+  cursor:pointer;
+  display: flex;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  background-color:rgb(116, 141, 174);
+  border-bottom-left-radius: 0.7rem;
+   border-bottom-right-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+     border-top-right-radius: 0.7rem;
+  height:40px;
+  width:70%;
+}
+.button {
+  font-size: 10px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(2, 14, 22, 0.949) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+  color: rgb(218, 218, 218);
+  border: none;
+  padding: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button span {
+  border-radius: 10px;
+  padding: 0.8em 1.3em;
+  padding-right: 1.2em;
+  text-shadow: 0px 0px 20px #4b4b4b;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  transition: all 0.3s;
+  background-color: rgba(106, 224, 237, 0.858);
+  background-image: radial-gradient(at 95% 89%, rgb(15, 15, 15) 0px, transparent 50%), radial-gradient(at 0% 100%, rgb(17, 17, 17) 0px, transparent 50%), radial-gradient(at 0% 0%, rgb(29, 29, 29) 0px, transparent 50%);
+}
+
+.button:hover span {
+  background-color: rgb(36, 128, 178);
+}
+
+.button-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;
+  filter: opacity(10%) contrast(105%);
+  -webkit-filter: opacity(10%) contrast(105%);
+}
+
+.button svg {
+  width: 15px;
+  height: 15px;
+}
+
+.input-container {
+  position: relative;
+  margin: 20px;
+}
+
+/* Input field */
+.input-field {
+  display: inline;
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #305476ac;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Input label */
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(161, 61, 61, 0.607);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Input highlight */
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+/* Input field:focus styles */
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
+}
