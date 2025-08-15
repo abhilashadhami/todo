@@ -4,7 +4,7 @@ let ul=document.querySelector('ul');
 let input=document.querySelector('input');
 let btn=document.querySelector('button');
 btn.addEventListener('click',function(e){
-    e.preventDefault();
+    e.preventDefault();// to avoid complete page to get refreshed
     if(input.value!==''){
         let html=`<p class="k">${input.value}</p>`;
         ul.insertAdjacentHTML('beforeend',html);
